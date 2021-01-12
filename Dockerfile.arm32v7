@@ -1,0 +1,6 @@
+FROM arm32v7/node:10
+MAINTAINER Klaus Gamauf <kg@w4it.at>
+
+RUN npm install -g localtunnel
+
+ENTRYPOINT ["node", "/usr/local/bin/lt"]
