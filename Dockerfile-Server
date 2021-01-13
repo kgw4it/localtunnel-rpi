@@ -1,0 +1,6 @@
+FROM node:10
+MAINTAINER Klaus Gamauf <kg@w4it.at>
+
+RUN npm install localtunnel-secure-server -g
+
+ENTRYPOINT ["node", "/usr/local/bin/ltss", "-a", "0.0.0.0"]
